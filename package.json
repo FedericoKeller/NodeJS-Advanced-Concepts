@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-advanced-concepts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "threads": "set UV_THREADPOOL_SIZE=5 && node threads.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelprim/NodeJS-Advanced-Concepts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelprim/NodeJS-Advanced-Concepts/issues"
+  },
+  "homepage": "https://github.com/Kelprim/NodeJS-Advanced-Concepts#readme"
+}
