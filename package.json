@@ -5,7 +5,7 @@
   "main": "loop.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "threads": "set UV_THREADPOOL_SIZE=5 && node threads.js"
+    "threads": "set UV_THREADPOOL_SIZE=5 && node multitask.js"
   },
   "repository": {
     "type": "git",
