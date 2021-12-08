@@ -1,12 +1,13 @@
 const crypto = require("crypto");
-
 const express = require("express");
-
 const app = express();
+const { Worker } = require("worker_threads");
 
 app.get("/", (req, res) => {
-  crypto.pbkdf2("a", "b", 100000, 512, "sha512", () => {
-    res.send("Hi there");
+  const worker = new Worker("./workerExample.js");
+
+  worker.once("message", (result) => {
+    res.send(result.data.toString());
   });
 });
 
